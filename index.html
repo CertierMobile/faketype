@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiniType — 10-word typing test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>MiniType — 10 words</h1>
+
+    <div id="words" class="words" aria-live="polite"></div>
+
+    <div class="controls">
+      <input id="input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Start typing..." />
+      <button id="restart">Restart</button>
+    </div>
+
+    <div class="stats" id="stats" hidden>
+      <div><strong>Time:</strong> <span id="time">0.00</span>s</div>
+      <div><strong>WPM:</strong> <span id="wpm">0</span></div>
+      <div><strong>Accuracy:</strong> <span id="acc">0%</span></div>
+    </div>
+
+    <p class="hint">Type the 10 words exactly. Timer starts on your first keystroke. Paste is disabled.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
